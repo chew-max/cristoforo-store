@@ -22,7 +22,7 @@ images:
   - /assets/images/products/scristoforo-tee-001/sct-001-back.png
 
 short_description: >
-  Fede e Forza - Faith and Strength
+  Fede e Forza - Faith and Strength.
 
 description: |
   ## S. Cristoforo — Fede e Forza Distressed Tee
