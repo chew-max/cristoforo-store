@@ -142,7 +142,7 @@ p {
    --------------------------------------------------------- */
 
 .announcement-bar {
-  background: #111111;
+  background: #632B32;
   color: #ffffff;
 
   font-size: 0.78rem;
@@ -162,11 +162,10 @@ p {
    --------------------------------------------------------- */
 
 .site-header {
-  position: relative;
-  z-index: 100;
-
-  background: #ffffff;
-  border-bottom: 1px solid #e8e8e8;
+    position: relative;
+    z-index: 100;
+    background: #171717;
+    border-bottom: 1px solid #ad8b56;
 }
 
 .site-header__inner {
@@ -180,11 +179,12 @@ p {
 }
 
 .site-header__brand {
-  justify-self: start;
-
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
+    justify-self: start;
+    font-size: 0.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    width: 250px;
+    padding: 10px;
 }
 
 .site-header__brand-name {
@@ -206,35 +206,44 @@ p {
 
   list-style: none;
 }
-
+/* Navigation links */
 .main-navigation a {
   position: relative;
-
   font-size: 0.88rem;
   font-weight: 500;
+  text-decoration: none;
+  color: #ede2d4;
+  transition: color 0.25s ease;
 }
 
+/* Underline hidden by default */
 .main-navigation a::after {
   content: "";
-
   position: absolute;
   left: 0;
-  bottom: -5px;
-
+  bottom: -6px;
   width: 100%;
-  height: 1px;
-
-  background: currentColor;
-
+  height: 2px;
+  background-color: #AD8B56;
   transform: scaleX(0);
-  transform-origin: right;
-
-  transition: transform 0.2s ease;
+  transform-origin: center;
+  transition: transform 0.3s ease;
 }
 
-.main-navigation a:hover::after {
+/* Hover effect */
+.main-navigation a:hover {
+  color: #AD8B56;
+}
+
+.main-navigation a:hover::after,
+.main-navigation a:focus-visible::after {
   transform: scaleX(1);
-  transform-origin: left;
+}
+
+/* Active navigation link */
+.main-navigation a.active::after,
+.main-navigation a[aria-current="page"]::after {
+  transform: scaleX(1);
 }
 
 .site-header__actions {
@@ -261,7 +270,7 @@ p {
   background: transparent;
   border: 0;
 
-  color: #111111;
+  color: #ede2d4;
 
   cursor: pointer;
 }
@@ -364,8 +373,172 @@ p {
   margin-bottom: 34px;
 
   font-size: 1.15rem;
-  color: #555555;
+  color: #ad8b56;
 }
+
+
+/* =========================================
+   S. CRISTOFORO — CINEMATIC VIDEO HERO
+   ========================================= */
+
+.hero {
+  position: relative;
+  width: 100%;
+  min-height: 740px;
+  min-height: min(820px, 85svh);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  isolation: isolate;
+  background: #171717;
+  background-image: none !important;
+}
+
+/* Full-screen cinematic video */
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Dark gradient for text readability */
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.40) 48%,
+    rgba(0, 0, 0, 0.12) 100%
+  );
+}
+
+/* Hero text overlay */
+.hero-content {
+  position: relative;
+  z-index: 2;
+  width: min(100% - 48px, 1300px);
+  margin-inline: auto;
+  padding-block: 100px;
+  color: #fff;
+}
+
+/* Eyebrow */
+.hero-content .eyebrow {
+  color: #ad8b56;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+/* Main heading */
+.hero-content h1 {
+  max-width: 800px;
+  margin: 20px 0;
+  color: #fff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(48px, 6vw, 90px);
+  font-weight: 700;
+  line-height: 0.98;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+}
+
+/* Supporting text */
+.hero-content p {
+  max-width: 540px;
+  margin: 20px 0 30px;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(15px, 1.4vw, 19px);
+  line-height: 1.6;
+}
+
+/* Collection button */
+.hero-content .btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 14px 28px;
+  background: #ede2d4;
+  color: #171717;
+  border: 1px solid #ede2d4;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: background 0.25s ease,
+              color 0.25s ease;
+}
+
+.hero-content .btn:hover {
+  background: #ad8b56;
+  border-color: #ad8b56;
+  color: #171717;
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero-content {
+    padding-block: 80px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .hero {
+    min-height: 620px;
+    min-height: 78svh;
+    align-items: flex-end;
+  }
+
+  .hero-video {
+    object-position: center center;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.85) 0%,
+      rgba(0, 0, 0, 0.35) 65%,
+      rgba(0, 0, 0, 0.12) 100%
+    );
+  }
+
+  .hero-content {
+    width: calc(100% - 40px);
+    padding-block: 55px;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(42px, 10vw, 62px);
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-content .btn {
+    transition: none;
+  }
+}
+
 
 
 /* ---------------------------------------------------------
@@ -386,8 +559,6 @@ p {
    --------------------------------------------------------- */
 
 .site-footer {
-  margin-top: 100px;
-
   padding: 80px 0 30px;
 
   background: #111111;
@@ -410,7 +581,7 @@ p {
 
 .site-footer__brand h2 {
   margin-bottom: 16px;
-
+  color: #d6a83c;
   font-size: 1.6rem;
 }
 
@@ -420,7 +591,7 @@ p {
 
 .site-footer__column h3 {
   margin-bottom: 18px;
-
+  color: #d6a83c;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -532,7 +703,9 @@ p {
 
     font-size: 1rem;
   }
-
+  .main-navigation a:hover {
+    color: #d6a83c;
+  }
   .site-header__actions .header-icon-button:first-child {
     display: none;
   }
@@ -1149,8 +1322,12 @@ body.cart-open {
 
 .product-info h1 {
   margin-bottom: 18px;
-
   font-size: clamp(2rem, 4vw, 3.6rem);
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+  line-height: 1.15;
+  text-transform: uppercase;
 }
 
 .product-info__price {
@@ -1542,29 +1719,30 @@ body.cart-open {
 .home-hero__content {
   position: relative;
   z-index: 1;
-
   width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 32px;
+  box-sizing: border-box;
 }
 
 .home-eyebrow {
   margin-bottom: 16px;
-
+  color: #d6a83c;
   font-size: 0.72rem;
   font-weight: 700;
-
   letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
 .home-hero h1 {
   max-width: 800px;
-
   margin-bottom: 22px;
-
   font-size:
-    clamp(3.4rem, 7vw, 7.5rem);
-
+    clamp(3.4rem, 7vw, 5.5rem);
   line-height: 0.94;
+  font-weight: 600;
+  font-family: 'Cinzel', Georgia, serif;
 }
 
 .home-hero__text {
@@ -1578,7 +1756,7 @@ body.cart-open {
 }
 
 .home-hero__button {
-  background: #ffffff;
+  background: #ad8b56;
   color: #111111;
 
   border-color: #ffffff;
@@ -1600,17 +1778,17 @@ body.cart-open {
 
 .home-section__header {
   display: flex;
-
   align-items: end;
   justify-content: space-between;
-
   gap: 40px;
-
   margin-bottom: 48px;
 }
 
 .home-section__header h2 {
   margin-bottom: 12px;
+  font-size: clamp(2rem, 4vw, 5.5rem);
+  font-family: 'Cinzel', Georgia, serif;
+  font-weight: 600;
 }
 
 .home-section__header p:last-child {
@@ -2068,9 +2246,10 @@ body.cart-open {
   margin: 0 0 18px;
 
   font-size: clamp(3rem, 5vw, 4.75rem);
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: -0.045em;
+  font-family: 'Cinzel', Georgia, serif;
 }
 
 .shop-page__header > p:last-child {
@@ -2149,6 +2328,35 @@ body.cart-open {
   line-height: 1.7;
 }
 
+
+.product-description {
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.product-description p {
+  margin: 0 0 16px;
+}
+
+.product-description h2,
+.product-description h3 {
+  font-weight: 700;
+  margin: 24px 0 12px;
+}
+
+.product-description ul {
+  list-style: disc;
+  padding-left: 22px;
+  margin: 12px 0 20px;
+}
+
+.product-description li {
+  margin-bottom: 8px;
+}
+
+.product-description strong {
+  font-weight: 700;
+}
 
 /* ---------------------------------------------------------
    Responsive
@@ -2604,8 +2812,12 @@ body.cart-open {
 .about-hero__content {
   position: relative;
   z-index: 1;
-
   max-width: 720px;
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding-inline: 32px;
+  box-sizing: border-box;
 }
 
 .about-hero .about-eyebrow {
@@ -2615,10 +2827,9 @@ body.cart-open {
 .about-hero h1 {
   max-width: 720px;
   margin: 0;
-
+  font-family: 'Cinzel', Georgia, serif;
   color: #fff;
-
-  font-size: clamp(3rem, 6vw, 6.5rem);
+  font-size: clamp(3rem, 6vw, 3.5rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
 }
@@ -2666,6 +2877,8 @@ body.cart-open {
   font-size: clamp(2.4rem, 4vw, 4.5rem);
   line-height: 1;
   letter-spacing: -0.035em;
+  font-weight: 600;
+  font-family: 'Cinzel', Georgia, serif;
 }
 
 .about-story__content p:not(.about-eyebrow) {
@@ -2800,6 +3013,8 @@ body.cart-open {
   font-size: clamp(3rem, 6vw, 6rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
+  font-weight: 600;
+  font-family: 'Cinzel', Georgia, serif;
 }
 
 .about-cta__inner > p:not(.about-eyebrow) {
@@ -2975,9 +3190,11 @@ body.cart-open {
 
 .contact-hero h1 {
   margin: 0;
-  font-size: clamp(3.5rem, 7vw, 7rem);
+  font-size: clamp(2.5rem, 7vw, 7rem);
   line-height: 0.95;
   letter-spacing: -0.045em;
+  font-weight: 600;
+  font-family: 'Cinzel', Georgia, serif;
 }
 
 .contact-hero__text {
@@ -3106,6 +3323,8 @@ body.cart-open {
 .contact-links__header h2 {
   margin: 0;
   font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 600;
+  font-family: 'Cinzel', Georgia, serif;
 }
 
 .contact-links__grid {
@@ -3245,7 +3464,7 @@ body.cart-open {
     padding-right: 20px;
   }
 }
-`r`n
+
 /* =========================================================
 
 /* Shop collections navigation dropdown */
@@ -3253,15 +3472,15 @@ body.cart-open {
 .nav-dropdown__heading { display: flex; align-items: center; gap: 6px; }
 .nav-dropdown__toggle { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 30px; padding: 0; border: 0; background: transparent; color: inherit; cursor: pointer; font: inherit; }
 .nav-dropdown__toggle[aria-expanded="true"] { transform: rotate(180deg); }
-.main-navigation .nav-dropdown__menu { display: none; position: absolute; top: 100%; left: 0; z-index: 110; min-width: 240px; margin: 0; padding: 10px 0; flex-direction: column; align-items: stretch; gap: 0; list-style: none; background: #fff; border: 1px solid #e8e8e8; box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.main-navigation .nav-dropdown__menu { display: none; position: absolute; top: 100%; left: 0; z-index: 110; min-width: 240px; margin: 0; padding: 10px 0; flex-direction: column; align-items: stretch; gap: 0; list-style: none; background: #171717; border: 0; box-shadow: 0 12px 28px rgba(0,0,0,.12); }
 .main-navigation .nav-dropdown.is-open > .nav-dropdown__menu { display: flex; } @media (min-width: 901px) and (hover: hover) { .main-navigation .nav-dropdown:hover > .nav-dropdown__menu { display: flex; } }
 .main-navigation .nav-dropdown__menu a { display: block; padding: 11px 18px; white-space: nowrap; font-size: .88rem; }
 .main-navigation .nav-dropdown__menu a::after { display: none; }
-.main-navigation .nav-dropdown__menu a:hover, .main-navigation .nav-dropdown__menu a:focus-visible { background: #f3f3f3; }
+.main-navigation .nav-dropdown__menu a:hover, .main-navigation .nav-dropdown__menu a:focus-visible { background: #171717; }
 @media (max-width: 900px) {
 .main-navigation .nav-dropdown__heading { justify-content: space-between; }
 .main-navigation .nav-dropdown__toggle { width: 44px; height: 44px; }
-.main-navigation .nav-dropdown__menu { position: static; min-width: 0; width: 100%; padding: 0 0 8px 18px; border: 0; box-shadow: none; background: transparent; }
+.main-navigation .nav-dropdown__menu { position: static; min-width: 0; width: 100%; padding: 0 0 8px 18px; border: 0; box-shadow: none; background: #171717; }
 .main-navigation .nav-dropdown:not(.is-open) > .nav-dropdown__menu { display: none; }
 .main-navigation .nav-dropdown.is-open > .nav-dropdown__menu { display: flex; }
 .main-navigation .nav-dropdown__menu a { padding: 10px 0; white-space: normal; font-size: .92rem; }
@@ -3284,8 +3503,10 @@ body.cart-open {
 .main-navigation .nav-subdropdown { position: relative; }
 .main-navigation .nav-subdropdown__heading { display: flex; align-items: center; justify-content: space-between; padding: 0 8px 0 18px; font-size: .88rem; cursor: pointer; }
 .main-navigation .nav-subdropdown__toggle { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 40px; border: 0; background: transparent; color: inherit; cursor: pointer; font: inherit; }
-.main-navigation .nav-subdropdown__menu { display: none; position: absolute; top: 0; left: 100%; z-index: 120; min-width: 260px; margin: 0; padding: 10px 0; list-style: none; background: #fff; border: 1px solid #e8e8e8; box-shadow: 0 12px 28px rgba(0,0,0,.12); }
+.main-navigation .nav-subdropdown__menu { display: none; position: absolute; top: 0; left: 100%; z-index: 120; min-width: 260px; margin: 0; padding: 10px 0; list-style: none; background: #fff; border: 0; box-shadow: 0 12px 28px rgba(0,0,0,.12); }
 .main-navigation .nav-subdropdown.is-open > .nav-subdropdown__menu { display: block; }
 @media (min-width: 901px) and (hover: hover) { .main-navigation .nav-subdropdown:hover > .nav-subdropdown__menu { display: block; } }
 .main-navigation .nav-subdropdown:focus-within > .nav-subdropdown__menu { display: block; }
 @media (max-width: 900px) { .main-navigation .nav-subdropdown__heading { padding: 0 0 0 12px; font-size: .92rem; } .main-navigation .nav-subdropdown__toggle { width: 44px; height: 44px; } .main-navigation .nav-subdropdown__menu { position: static; min-width: 0; width: 100%; padding: 0 0 8px 18px; border: 0; box-shadow: none; background: transparent; } .main-navigation .nav-subdropdown:not(.is-open) > .nav-subdropdown__menu { display: none; } .main-navigation .nav-subdropdown.is-open > .nav-subdropdown__menu { display: block; } }
+
+

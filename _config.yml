@@ -3,11 +3,11 @@
 # Update these values when cloning the storefront.
 # =========================================================
 
-title: "Jekyll Commerce"
-description: "A modern storefront built with Jekyll"
+title: "S. CRISTOFORO - CARRY YOUR PURPOSE"
+description: "More than Fashion. A Calling. Faith Without Compromise"
 
 url: "https://chew-max.github.io"
-baseurl: "/jekyll-commerce-starter"
+baseurl: ""
 
 logo: "/assets/images/logo.svg"
 

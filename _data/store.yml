@@ -1,13 +1,13 @@
 brand:
-  name: "Jekyll Commerce"
-  tagline: "A modern storefront built with Jekyll"
-  logo: "/assets/images/logo.svg"
+  name: "House of Cristoforo"
+  tagline: "CARRY YOUR PURPOSE"
+  logo: "/assets/images/logo.png"
 
 theme:
-  primary: "#111111"
-  secondary: "#666666"
-  accent: "#111111"
-  background: "#ffffff"
+  primary: "#EDE2D4"
+  secondary: "#89877F"
+  accent: "#AD8B56"
+  background: "#171717"
 
 store:
   currency: "USD"
@@ -18,10 +18,10 @@ announcement:
   text: "Free shipping on orders over $50"
 
 contact:
-  email: "support@example.com"
+  email: "info@mthpinnaclellc.com"
 
 social:
-  instagram: ""
+  instagram: "houseofcristoforo"
   facebook: ""
   tiktok: ""
   
@@ -54,10 +54,10 @@ collections:
     description: "Everyday tees and apparel."
     image: "/assets/images/collections/shirts.png"
 
-  - handle: drinkware
-    title: "Drinkware"
-    description: "Mugs, tumblers, and everyday drinkware."
-    image: "/assets/images/collections/drinkware.png"
+  - handle: hoodies
+    title: "Hoodies"
+    description: "Everyday hoodies and apparel."
+    image: "/assets/images/collections/shirts.png"
 
   - handle: best-sellers
     title: "Best Sellers"
@@ -66,9 +66,9 @@ collections:
   
 homepage:
   hero:
-    eyebrow: "NEW COLLECTION"
-    heading: "Built for the Weekend."
-    text: "Everyday essentials designed for wherever the day takes you."
+    eyebrow: "HOUSE OF CRISTOFORO"
+    heading: "CARRY YOUR PURPOSE"
+    text: "Faith in every step. Strength in every journey."
     button_label: "Shop the Collection"
     button_url: "/shop/"
     image: "/assets/images/home/hero.png"
@@ -79,10 +79,10 @@ homepage:
     text: "A few of our current favorites."
 
   promo:
-    eyebrow: "EVERYDAY ESSENTIALS"
-    heading: "Made for more than one kind of day."
-    text: "Simple, versatile pieces made to fit into everyday life."
-    button_label: "Shop All"
+    eyebrow: "FAITH · STRENGTH · PURPOSE"
+    heading: "More Than What You Wear."
+    text: "Rootedin faith. Driven by purpose. Crafted for those who carry their beliefs with confidence and live with intention."
+    button_label: "Shop"
     button_url: "/shop/"
     image: "/assets/images/home/promo.png"
 
