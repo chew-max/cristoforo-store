@@ -13,16 +13,16 @@ description: Learn more about our brand, products, and what inspires what we mak
     <div class="about-hero__content">
 
       <p class="about-eyebrow">
-        ABOUT {{ site.data.store.brand.name | upcase }}
+        THE HOUSE OF S. CRISTOFORO
       </p>
 
       <h1>
-        {{ site.data.store.brand.tagline }}
+        FAITH. STRENGTH. PURPOSE.
       </h1>
 
       <p class="about-hero__intro">
-        Thoughtfully designed products made for everyday life,
-        with personality built in.
+        Rooted in faith. Driven by purpose. Created for those
+        who carry their convictions into everything they do.
       </p>
 
     </div>
