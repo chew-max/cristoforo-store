@@ -39,21 +39,19 @@ description: Learn more about our brand, products, and what inspires what we mak
       <div class="about-story__content">
 
         <p class="about-eyebrow">
-          WHERE IT STARTED
+          THE STORY BEHIND THE HOUSE
         </p>
 
         <h2>
-          Products with a little more personality.
+          More than what you wear. A reflection of what you carry.
         </h2>
 
         <p>
-          {{ site.data.store.brand.name }} was created around a simple idea:
-          everyday products don't have to feel ordinary.
+          Rooted in faith, shaped by heritage, and driven by purpose. House of Cristoforo creates apparel that represents the values we live by.
         </p>
 
         <p>
-          We build collections around the personalities, hobbies,
-          projects, and moments that make everyday life more interesting.
+          Every piece is a reminder that strength is built through conviction, and true purpose is carried into everything we do.
         </p>
 
         <a href="{{ '/shop/' | relative_url }}" class="button">
