@@ -94,7 +94,7 @@ description: Learn more about our brand, products, and what inspires what we mak
       </h2>
 
       <p>
-        Rootedin faith. Driven by purpose. Crafted for those who carry their beliefs with confidence and live with intention.
+        Rooted in faith. Driven by purpose. Crafted for those who carry their beliefs with confidence and live with intention.
       </p>
 
     </div>
