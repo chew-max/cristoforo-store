@@ -5,184 +5,121 @@
     "price": 49.99,
     "price_cents": 4999,
     "option_names": [
-      "size",
-      "color"
+      "color",
+      "size"
     ],
     "option_values": {
-      "size": [
-        "S",
-        "XL",
-        "L",
-        "M",
-        "2XL",
-        "3XL",
-        "4XL",
-        "5XL"
-      ],
       "color": [
-        "White"
+        "Black"
+      ],
+      "size": [
+        "M",
+        "S",
+        "L",
+        "XL",
+        "2XL"
       ]
     },
     "variant_index": {
-      "S||White": {
-        "sku": "SCT-001-WHITE-S",
+      "Black||M": {
+        "sku": "SCT-001-BLACK-M",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "S",
-          "color": "White"
-        },
-        "available": true
-      },
-      "XL||White": {
-        "sku": "SCT-001-WHITE-XL",
-        "price": 49.99,
-        "price_cents": 4999,
-        "options": {
-          "color": "White",
-          "size": "XL"
-        },
-        "available": true
-      },
-      "L||White": {
-        "sku": "SCT-001-WHITE-L",
-        "price": 49.99,
-        "price_cents": 4999,
-        "options": {
-          "color": "White",
-          "size": "L"
-        },
-        "available": true
-      },
-      "M||White": {
-        "sku": "SCT-001-WHITE-M",
-        "price": 49.99,
-        "price_cents": 4999,
-        "options": {
-          "color": "White",
+          "color": "Black",
           "size": "M"
         },
         "available": true
       },
-      "2XL||White": {
-        "sku": "SCT-001-WHITE-2XL",
+      "Black||S": {
+        "sku": "SCT-001-BLACK-S",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "2XL",
-          "color": "White"
+          "size": "S",
+          "color": "Black"
         },
         "available": true
       },
-      "3XL||White": {
-        "sku": "SCT-001-WHITE-3XL",
+      "Black||L": {
+        "sku": "SCT-001-BLACK-L",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "color": "White",
-          "size": "3XL"
+          "color": "Black",
+          "size": "L"
         },
         "available": true
       },
-      "4XL||White": {
-        "sku": "SCT-001-WHITE-4XL",
+      "Black||XL": {
+        "sku": "SCT-001-BLACK-XL",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "4XL",
-          "color": "White"
+          "color": "Black",
+          "size": "XL"
         },
         "available": true
       },
-      "5XL||White": {
-        "sku": "SCT-001-WHITE-5XL",
+      "Black||2XL": {
+        "sku": "SCT-001-BLACK-2XL",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "5XL",
-          "color": "White"
+          "color": "Black",
+          "size": "2XL"
         },
         "available": true
       }
     },
     "variants": [
       {
-        "sku": "SCT-001-WHITE-S",
+        "sku": "SCT-001-BLACK-M",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "S",
-          "color": "White"
-        },
-        "available": true
-      },
-      {
-        "sku": "SCT-001-WHITE-XL",
-        "price": 49.99,
-        "price_cents": 4999,
-        "options": {
-          "color": "White",
-          "size": "XL"
-        },
-        "available": true
-      },
-      {
-        "sku": "SCT-001-WHITE-L",
-        "price": 49.99,
-        "price_cents": 4999,
-        "options": {
-          "color": "White",
-          "size": "L"
-        },
-        "available": true
-      },
-      {
-        "sku": "SCT-001-WHITE-M",
-        "price": 49.99,
-        "price_cents": 4999,
-        "options": {
-          "color": "White",
+          "color": "Black",
           "size": "M"
         },
         "available": true
       },
       {
-        "sku": "SCT-001-WHITE-2XL",
+        "sku": "SCT-001-BLACK-S",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "2XL",
-          "color": "White"
+          "size": "S",
+          "color": "Black"
         },
         "available": true
       },
       {
-        "sku": "SCT-001-WHITE-3XL",
+        "sku": "SCT-001-BLACK-L",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "color": "White",
-          "size": "3XL"
+          "color": "Black",
+          "size": "L"
         },
         "available": true
       },
       {
-        "sku": "SCT-001-WHITE-4XL",
+        "sku": "SCT-001-BLACK-XL",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "4XL",
-          "color": "White"
+          "color": "Black",
+          "size": "XL"
         },
         "available": true
       },
       {
-        "sku": "SCT-001-WHITE-5XL",
+        "sku": "SCT-001-BLACK-2XL",
         "price": 49.99,
         "price_cents": 4999,
         "options": {
-          "size": "5XL",
-          "color": "White"
+          "color": "Black",
+          "size": "2XL"
         },
         "available": true
       }
