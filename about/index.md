@@ -94,8 +94,7 @@ description: Learn more about our brand, products, and what inspires what we mak
       </h2>
 
       <p>
-        Products designed around the personalities, hobbies, projects,
-        and everyday moments that make life a little more interesting.
+        Rootedin faith. Driven by purpose. Crafted for those who carry their beliefs with confidence and live with intention.
       </p>
 
     </div>
