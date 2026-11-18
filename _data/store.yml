@@ -72,6 +72,13 @@ homepage:
     button_label: "Shop the Collection"
     button_url: "/shop/"
     image: "/assets/images/home/hero.png"
+    
+homepage:
+  hero:
+    eyebrow: "HOUSE OF CRISTOFORO"
+    heading: "CARRY YOUR PURPOSE"
+    text: "Faith in every step. Strength in every journey."
+    image: "/assets/images/home/hero.png"
 
   featured:
     eyebrow: "SHOP THE LATEST"
