@@ -22,10 +22,10 @@ images:
   - /assets/images/products/scristoforo-tee-001/image1.png
   - /assets/images/products/scristoforo-tee-001/image4.png
   - /assets/images/products/scristoforo-tee-001/image3.png
-  - /assets/images/products/scristoforo-tee-001/image8.png
-  - /assets/images/products/scristoforo-tee-001/image7.png
-  - /assets/images/products/scristoforo-tee-001/image5.png
-  - /assets/images/products/scristoforo-tee-001/image6.png
+  - /assets/images/products/scristoforo-tee-001/image8.jpg
+  - /assets/images/products/scristoforo-tee-001/image7.jpg
+  - /assets/images/products/scristoforo-tee-001/image5.jpg
+  - /assets/images/products/scristoforo-tee-001/image6.jpg
 
 short_description: >
   Fede e Forza - Faith and Strength.
