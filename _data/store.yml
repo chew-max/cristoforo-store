@@ -63,6 +63,12 @@ collections:
     title: "Best Sellers"
     description: "Customer favorites from across the collection."
     image: "/assets/images/collections/best-sellers.png"
+    
+  - handle: fede-e-forza
+    title: "Fede e Forza — meaning Faith and Strength "
+    description: "Customer favorites from across the collection."
+    image: "/assets/images/collections/best-sellers.png"
+    
   
 homepage:
   hero:
