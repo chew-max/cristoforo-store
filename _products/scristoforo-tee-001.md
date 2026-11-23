@@ -15,11 +15,17 @@ collections:
   - shirts
   - best-sellers
 
-image: /assets/images/products/scristoforo-tee-001/sct-001-front.png
+image: /assets/images/products/scristoforo-tee-001/image2.png
 
 images:
-  - /assets/images/products/scristoforo-tee-001/sct-001-front.png
-  - /assets/images/products/scristoforo-tee-001/sct-001-back.png
+  - /assets/images/products/scristoforo-tee-001/image2.png
+  - /assets/images/products/scristoforo-tee-001/image1.png
+  - /assets/images/products/scristoforo-tee-001/image4.png
+  - /assets/images/products/scristoforo-tee-001/image3.png
+  - /assets/images/products/scristoforo-tee-001/image8.png
+  - /assets/images/products/scristoforo-tee-001/image7.png
+  - /assets/images/products/scristoforo-tee-001/image5.png
+  - /assets/images/products/scristoforo-tee-001/image6.png
 
 short_description: >
   Fede e Forza - Faith and Strength.
